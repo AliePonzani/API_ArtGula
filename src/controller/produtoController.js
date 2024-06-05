@@ -86,7 +86,7 @@ servidor.put('/produto/:cardapio/:id', async (req, resp) => {
     }
 });
 
-servidor.put('/:link/imgProduto/:id', upload.single('imgProduto'), async (req, resp) => {
+servidor.put('/imgProduto/:link/:id', upload.single('imgProduto'), async (req, resp) => {
     try {
         let id = req.params.id;
         let link = req.params.link;
